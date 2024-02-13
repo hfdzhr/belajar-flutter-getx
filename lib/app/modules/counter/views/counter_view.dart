@@ -33,7 +33,7 @@ class CounterView extends StatelessWidget {
                     snackPosition: SnackPosition.TOP,
                     backgroundColor: Colors.deepOrange,
                     colorText: Colors.white,
-                    icon: Icon(Icons.warning));
+                    icon: const Icon(Icons.warning));
               }
             },
             child: const Icon(Icons.remove),
@@ -47,7 +47,7 @@ class CounterView extends StatelessWidget {
                     snackPosition: SnackPosition.TOP,
                     backgroundColor: Colors.deepOrange,
                     colorText: Colors.white,
-                    icon: Icon(Icons.warning));
+                    icon: const Icon(Icons.warning));
               }
             },
             child: const Icon(Icons.add),
