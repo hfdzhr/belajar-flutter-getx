@@ -1,3 +1,4 @@
+import 'package:belajar_getx/app/modules/brand/controllers/brand_controller.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -13,4 +14,5 @@ void main() {
       debugShowCheckedModeBanner: false,
     ),
   );
+  Get.put(BrandController());
 }

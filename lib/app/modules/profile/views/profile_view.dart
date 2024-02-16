@@ -28,22 +28,22 @@ class ProfileView extends StatelessWidget {
                   children: [
                     Text(
                       'ID: ${profilController.user['id']}',
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
                       'Nama: ${profilController.user['full_name']}',
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
                       'Email: ${profilController.user['email']}',
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
-                      'Role: ${profilController.user['phone_number']}',
-                      style: TextStyle(fontSize: 18),
+                      'Phone Number: ${profilController.user['phone_number']}',
+                      style: const TextStyle(fontSize: 18),
                     ),
                     // SizedBox(height: 8),
                     // Text(

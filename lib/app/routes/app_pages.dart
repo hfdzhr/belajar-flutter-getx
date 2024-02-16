@@ -1,7 +1,12 @@
+import 'package:belajar_getx/app/modules/brand/views/create_brand_view.dart';
+import 'package:belajar_getx/app/modules/brand/views/edit_brand_view.dart';
+import 'package:belajar_getx/app/modules/brand/views/show_brand_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/bottom-menu/bindings/bottom_menu_binding.dart';
 import '../modules/bottom-menu/views/bottom_menu_view.dart';
+import '../modules/brand/bindings/brand_binding.dart';
+import '../modules/brand/views/brand_view.dart';
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -50,6 +55,23 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.BRAND,
+      page: () => BrandView(),
+      binding: BrandBinding(),
+    ),
+    GetPage(
+      name: _Paths.TambahBrand,
+      page: () => TambahBrandView(),
+    ),
+    GetPage(
+      name: _Paths.EditBrand,
+      page: () => EditBrandView(brand: Get.arguments),
+    ),
+    GetPage(
+      name: _Paths.DetailBrand,
+      page: () => DetailBrandView(brand: Get.arguments),
     ),
   ];
 }

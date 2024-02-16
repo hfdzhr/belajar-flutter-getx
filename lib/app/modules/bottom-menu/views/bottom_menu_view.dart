@@ -1,3 +1,4 @@
+import 'package:belajar_getx/app/modules/brand/views/brand_view.dart';
 import 'package:belajar_getx/app/modules/counter/views/counter_view.dart';
 import 'package:belajar_getx/app/modules/home/views/home_view.dart';
 import 'package:belajar_getx/app/modules/profile/views/profile_view.dart';
@@ -14,7 +15,7 @@ class BottomMenuView extends GetView<BottomMenuController> {
     return Scaffold(
       body: Obx(() => IndexedStack(
             index: controller.currentIndex.value,
-            children: [HomeView(), CounterView(), ProfileView()],
+            children: [CounterView(), ProfileView(), BrandView()],
           )),
       bottomNavigationBar: Obx(
         () => BottomNavigationBar(
@@ -24,16 +25,16 @@ class BottomMenuView extends GetView<BottomMenuController> {
           },
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
               icon: Icon(Icons.assignment),
               label: 'Counter',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: 'Profil',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.branding_watermark),
+              label: 'Brand',
             ),
           ],
         ),

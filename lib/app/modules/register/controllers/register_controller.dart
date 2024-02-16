@@ -53,7 +53,7 @@ class RegisterController extends GetxController {
   }
 
   Future<http.Response> _performRegistration() async {
-    var apiUrl = '/users';
+    var apiUrl = '/merchants';
     var requestBody = {
       'email': email.value,
       'password': password.value,

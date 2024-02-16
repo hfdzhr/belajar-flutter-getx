@@ -29,9 +29,8 @@ class ProfileController extends GetxController {
 
       // Set the Authorization header with the token
       var headers = {'Authorization': 'Bearer ${TokenWithoutQuotation}'};
-      print(headers);
       // Perform user details API request
-      var apiUrl = '/users/me';
+      var apiUrl = '/merchants/me';
       var response = await http.get(
         Uri.parse(Api.baseUrl + apiUrl),
         headers: headers,
